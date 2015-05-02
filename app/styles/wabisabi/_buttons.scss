@@ -1,0 +1,7 @@
+$border-radius-default--button: 6px;
+.button {
+  @include border-radius($border-radius-default--button);
+  background-color: $primary;
+  color: $white;
+  font-size: $fontSize-base;
+}

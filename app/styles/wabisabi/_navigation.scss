@@ -1,0 +1,42 @@
+$height-default--nav: 54px;
+$line-height-default--nav: $height-default--nav;
+$background-color-default--nav: #514ed9;
+$background-color-active--nav: #403ead;
+$color-active--nav: #ededfb;
+.nav {
+  background-color: $background-color-default--nav;
+  color: $white;
+  height: $height-default--nav;
+  line-height: $line-height-default--nav;
+}
+.nav--fixed {
+  left: 0;
+  max-height: $height-default--nav;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: $zIndex-10;
+}
+.nav-list {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-list-item {
+  float: left;
+  list-style-type: none;
+}
+.nav-list-item-link {
+  color: $white;
+  display: block;
+  padding: 0 $padding-largerer;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &.active,
+  &:hover {
+    background-color: $background-color-active--nav;
+    color: $color-active--nav;
+  }
+}

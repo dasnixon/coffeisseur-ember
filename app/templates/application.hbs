@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<header>
+  <nav class='nav nav--fixed'>
+    <ul class='nav-list'>
+      <li class='nav-list-item'>
+        {{link-to 'Roasts' 'roasts' class='nav-list-item-link'}}
+      </li>
+      <li class='nav-list-item'>
+        {{link-to 'Beans' 'beans' class='nav-list-item-link'}}
+      </li>
+      <li class='nav-list-item'>
+        {{link-to 'About' 'about' class='nav-list-item-link'}}
+      </li>
+    </ul>
+  </nav>
+</header>
 
-{{outlet}}
+<main class='main'>
+  {{outlet}}
+</main>

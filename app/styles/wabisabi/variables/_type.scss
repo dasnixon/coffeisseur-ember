@@ -1,0 +1,42 @@
+//*** Font Sizes ****
+$fontSize-micro:    10px;
+$fontSize-smallest: 11px;
+$fontSize-smaller:  12px;
+$fontSize-small:    13px;
+$fontSize-base:     14px;
+$fontSize-medium:   16px;
+$fontSize-large:    18px;
+$fontSize-xlarge:   20px;
+$fontSize-xxlarge:  24px;
+$fontSize-xxxlarge: 48px;
+
+//*** Font Weights ****
+$fontWeight-lightest: 100;
+$fontWeight-lighter:  200;
+$fontWeight-light:    300;
+$fontWeight-normal:   400;
+$fontWeight-medium:   500;
+$fontWeight-demibold: 600;
+$fontWeight-bold:     700;
+$fontWeight-bolder:   800;
+$fontWeight-boldest:  900;
+
+//*** Line Heights ****
+$lineHeight-ultratight: 12px;
+$lineHeight-tightest:   13px;
+$lineHeight-tighter:    14px;
+$lineHeight-tight:      15px;
+$lineHeight-base:       16px;
+$lineHeight-loose:      18px;
+$lineHeight-looser:     20px;
+$lineHeight-loosest:    22px;
+$lineHeight-loosestest: 26px;
+
+//*** Letter Spacings *****
+$letterSpacing-tightest: -0.04em;
+$letterSpacing-tighter:  -0.02em;
+$letterSpacing-tight:    -0.01em;
+$letterSpacing-base:     0em;
+$letterSpacing-loose:    0.01em;
+$letterSpacing-looser:   0.02em;
+$letterSpacing-loosest:  0.04em;

@@ -6,6 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
+  this.route('about');
   this.resource('beans', function() {
     this.route('new');
   });
