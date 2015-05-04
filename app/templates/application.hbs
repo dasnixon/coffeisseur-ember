@@ -11,6 +11,20 @@
         {{link-to 'About' 'about' class='nav-list-item-link'}}
       </li>
     </ul>
+    <ul class='nav-list nav-list--right'>
+      {{#if session.isAuthenticated}}
+        <li class='nav-list-item'>
+          <a class='nav-list-item-link' {{action 'invalidateSession'}}>Logout</a>
+        </li>
+      {{else}}
+        <li class='nav-list-item'>
+          {{link-to 'Register' 'users.new' class='nav-list-item-link'}}
+        </li>
+        <li class='nav-list-item'>
+          {{link-to 'Login' 'login' class='nav-list-item-link'}}
+        </li>
+      {{/if}}
+    </ul>
   </nav>
 </header>
 

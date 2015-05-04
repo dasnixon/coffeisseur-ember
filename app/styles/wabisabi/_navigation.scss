@@ -1,11 +1,12 @@
-$height-default--nav: 54px;
+$height-default--nav: 80px;
 $line-height-default--nav: $height-default--nav;
-$background-color-default--nav: #514ed9;
-$background-color-active--nav: #403ead;
-$color-active--nav: #ededfb;
+$background-color-default--nav: #7d1935;
+$background-color-active--nav: #6d162e;
+$color-active--nav: $off-white;
 .nav {
   background-color: $background-color-default--nav;
   color: $white;
+  font-weight: $fontWeight-medium;
   height: $height-default--nav;
   line-height: $line-height-default--nav;
 }
@@ -22,6 +23,9 @@ $color-active--nav: #ededfb;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.nav-list--right {
+  float: right;
 }
 .nav-list-item {
   float: left;

@@ -1,4 +1,6 @@
+$background-color-default--body: #f5f3ee;
 body {
+  background-color: $background-color-default--body;
   color: $black;
   font-size: $fontSize-base;
   line-height: $lineHeight-base;
