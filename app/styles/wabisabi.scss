@@ -6,5 +6,5 @@ body {
   line-height: $lineHeight-base;
 }
 .main {
-  padding-top: $height-default--nav;
+  padding-top: $height-default--nav + $height-default--subNav;
 }

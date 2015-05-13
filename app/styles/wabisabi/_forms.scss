@@ -1,0 +1,59 @@
+//form
+.form {
+  display: block;
+}
+.form-section {
+  margin: 0 0 $margin-larger 0;
+  width: 100%;
+
+  &:first-child {
+    margin-top: $margin-medium;
+  }
+}
+.form-section-header {
+  font-size: $fontSize-medium;
+  font-weight: $fontWeight-demibold;
+  line-height: $lineHeight-loosest;
+  margin-left: $margin-base;
+  text-transform: uppercase;
+}
+.form-section-header--inline {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: $margin-base;
+}
+
+$height-default--input: 24px;
+$width-default--input: 500px;
+$border-radius-default--input: 2px;
+//input
+.input {
+  @include border-radius($border-radius-default--input);
+  @include css3-prefix('box-shadow', 'inset 0 1px 1px #{$gray-lightest}');
+  background-color: $white;
+  border: 1px solid $gray-lightest;
+  display: inline-block;
+  font-size: $fontSize-base;
+  height: $height-default--input;
+  line-height: $height-default--input;
+  padding: $padding-small 0;
+  text-indent: $padding-small;
+  width: $width-default--input;
+  &:focus {
+    border-color: rgba(82,168,236,.8);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+  }
+}
+.input--checkbox {
+  @include css3-prefix('box-shadow', 'none');
+  height: auto;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+.textarea {
+  @extend .input;
+  height: auto;
+}

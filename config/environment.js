@@ -6,13 +6,6 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-    'simple-auth': {
-      authorizer: 'simple-auth-session-store:cookie',
-      crossOriginWhitelist: ['http://localhost:8080']
-    },
-    'simple-auth-cookie-store': {
-      cookieName: 'wabi-sabi-' + environment
-    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

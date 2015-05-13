@@ -7,5 +7,8 @@ export default DS.Model.extend({
   time: DS.attr('integer'),
   firstCrackAt: DS.attr('integer'),
   secondCrackAt: DS.attr('integer'),
-  favorite: DS.attr('boolean')
+  favorite: DS.attr('boolean'),
+
+  user: DS.belongsTo('user'),
+  bean: DS.belongsTo('bean')
 });

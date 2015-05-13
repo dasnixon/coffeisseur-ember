@@ -1,0 +1,39 @@
+$height-default--subNav: $height-default--nav/2;
+$line-height-default--subNav: $height-default--subNav;
+$background-color-default--subNav: $white;
+$color-default--subNav: #7d1935;
+$background-color-active--subNav: $gray-light;
+$color-active--subNav: $off-white;
+.subNav {
+  background-color: $background-color-default--subNav;
+  box-shadow: -2px 8px 8px -8px $gray-lightest;
+  color: $color-default--subNav;
+  font-weight: $fontWeight-medium;
+  height: $height-default--subNav;
+  line-height: $line-height-default--subNav;
+}
+.subNav--fixed {
+  @extend .nav--fixed;
+  max-height: $height-default--subNav;
+  top: $height-default--nav;
+}
+.subNav-list {
+  @extend .nav-list;
+}
+.subNav-list--right {
+  @extend .nav-list--right;
+}
+.subNav-list-item {
+  @extend .nav-list-item;
+}
+.subNav-list-item-link {
+  @extend .nav-list-item-link;
+  color: $color-default--subNav;
+  font-weight: $fontWeight-demibold;
+
+  &.active,
+  &:hover {
+    background-color: $background-color-active--subNav;
+    color: $color-active--subNav;
+  }
+}
