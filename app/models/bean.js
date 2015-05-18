@@ -3,6 +3,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   name: DS.attr('string'),
   description: DS.attr('string'),
+  characteristics: DS.attr('string'),
   degreeOfRoast: DS.attr('string'),
   farm: DS.attr('string'),
   varietal: DS.attr('string'),

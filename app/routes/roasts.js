@@ -1,7 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  beforeModel: function() {
+    this.controllerFor('application').setTitle('Roasts');
+  },
+
   model: function() {
-    this.store.find('roast');
+    return this.store.find('roast');
   }
 });

@@ -12,7 +12,27 @@
   </div>
 
   <div class='form-section'>
+    {{textarea rows='3' value=model.characteristics placeholder='Characteristics' class='textarea'}}
+  </div>
+
+  <div class='form-section'>
     {{input value=model.degreeOfRoast placeholder='Ideal Degree of Roast' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    {{input value=model.varietal placeholder='Varietal' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    {{input value=model.processing placeholder='Processing' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    {{input value=model.grade placeholder='Grade' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    {{input value=model.appearance placeholder='Appearance' class='input'}}
   </div>
 
   <div class='form-section'>
@@ -32,6 +52,13 @@
       Organic?
     </div>
     {{input checked=model.organic type='checkbox' class='input input--checkbox'}}
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-header form-section-header--inline'>
+      Espresso?
+    </div>
+    {{input checked=model.espresso type='checkbox' class='input input--checkbox'}}
   </div>
 
   <button class='button' {{action 'createBean'}}>

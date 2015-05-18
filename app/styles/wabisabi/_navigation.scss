@@ -3,10 +3,10 @@ $line-height-default--nav: $height-default--nav;
 $background-color-default--nav: #7d1935;
 $background-color-active--nav: #6d162e;
 $color-active--nav: $off-white;
+$font-size-default--nav-title: $height-default--nav/2;
 .nav {
   background-color: $background-color-default--nav;
   color: $white;
-  font-weight: $fontWeight-medium;
   height: $height-default--nav;
   line-height: $line-height-default--nav;
 }
@@ -43,4 +43,9 @@ $color-active--nav: $off-white;
     background-color: $background-color-active--nav;
     color: $color-active--nav;
   }
+}
+.nav-title {
+  font-size: $font-size-default--nav-title;
+  margin-left: $margin-largest;
+  text-transform: uppercase;
 }

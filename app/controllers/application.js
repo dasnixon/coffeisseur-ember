@@ -1,8 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  title: 'Home',
+  subtitle: null,
+
+  setTitle: function(title) {
+    this.set('title', title);
+  },
+
   actions: {
-    invalidateSesseion: function() {
+    invalidateSession: function() {
       this.get('session').invalidate();
     }
   }

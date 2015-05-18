@@ -1,7 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  beforeModel: function() {
+    this.controllerFor('application').setTitle('Add a bean');
+  },
+
   model: function() {
-    this.store.createRecord('bean');
+    return this.store.createRecord('bean');
   }
 });
