@@ -1,8 +1,6 @@
 $height-default--nav: 80px;
 $line-height-default--nav: $height-default--nav;
-$background-color-default--nav: #7d1935;
-$background-color-active--nav: #6d162e;
-$color-active--nav: $off-white;
+$background-color-default--nav: #40b0f9;
 $font-size-default--nav-title: $height-default--nav/2;
 .nav {
   background-color: $background-color-default--nav;
@@ -40,8 +38,8 @@ $font-size-default--nav-title: $height-default--nav/2;
 
   &.active,
   &:hover {
-    background-color: $background-color-active--nav;
-    color: $color-active--nav;
+    background-color: #078ee5;
+    color: $white;
   }
 }
 .nav-title {

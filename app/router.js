@@ -19,8 +19,10 @@ export default Router.map(function() {
   this.resource('roast', { path: '/roast/:roast_id' }, function() {
     this.route('edit');
   });
-  this.route('users', function() {
-    this.route('new');
+  this.resource('users', function() {
+    this.route('signup');
   });
-  this.route('login');
+  this.resource('sessions', function() {
+    this.route('login');
+  });
 });
