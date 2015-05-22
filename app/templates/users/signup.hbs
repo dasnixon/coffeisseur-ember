@@ -1,0 +1,62 @@
+<form class='form'>
+
+  <div class='form-section'>
+    <div class='form-section-header'>
+      First Name
+    </div>
+    {{input value=model.firstName placeholder='First Name' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-header'>
+      Last Name
+    </div>
+    {{input value=model.lastName placeholder='Last Name' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-header'>
+      Email
+    </div>
+    {{input value=model.email placeholder='Email' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-header'>
+      Username
+    </div>
+    {{input value=model.username placeholder='Username' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-header'>
+      About
+    </div>
+    {{textarea rows='3' value=model.about placeholder='About' class='textarea'}}
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-header form-section-header--inline'>
+      Roaster?
+    </div>
+    {{input checked=model.roaster type='checkbox' class='input input--checkbox'}}
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-header'>
+      Password
+    </div>
+    {{input value=model.password type='password' class='input'}}
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-header'>
+      Password Confirmation
+    </div>
+    {{input value=model.passwordConfirmation type='password' class='input'}}
+  </div>
+
+  <button class='button' {{action 'createUser'}}>
+    Create User
+  </button>
+</form>

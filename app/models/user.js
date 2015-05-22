@@ -7,5 +7,9 @@ export default DS.Model.extend({
   roaster: DS.attr('boolean'),
   about: DS.attr('string'),
   username: DS.attr('string'),
-  favoriteRoaster: DS.attr('string')
+  favoriteRoaster: DS.attr('string'),
+  password: DS.attr('string'),
+  passwordConfirmation: DS.attr('string'),
+
+  apiKeys: DS.hasMany('apiKey')
 });

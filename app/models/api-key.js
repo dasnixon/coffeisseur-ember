@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import DS from 'ember-data';
 
-export default Ember.Object.extend({
-  accessToken: '',
-  user: null
+export default DS.Model.extend({
+  accessToken: DS.attr('string'),
+  user: DS.belongsTo('user')
 });

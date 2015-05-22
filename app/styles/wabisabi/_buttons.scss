@@ -1,5 +1,5 @@
 $border-radius-default--button: 6px;
-$background-color-default--button: #4a96ad;
+$background-color-default--button: #40b0f9;
 .button {
   @include border-radius($border-radius-default--button);
   background-color: $background-color-default--button;
