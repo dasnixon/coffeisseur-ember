@@ -14,6 +14,7 @@ export default Ember.Controller.extend({
     }
   },
 
+  cookie: Ember.inject.service(),
   attemptedTransition: null,
   token: null,
   currentUser: null,
@@ -74,7 +75,7 @@ export default Ember.Controller.extend({
             });
             key.set('user', user);
             key.save();
-            user.get('apiKeys').content.push(key);
+            user.get('apiKeys').pushObject(key);
             if (attemptedTrans) {
               attemptedTrans.retry();
               _this.set('attemptedTransition', null);

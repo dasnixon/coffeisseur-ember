@@ -1,5 +1,5 @@
 $border-radius-default--button: 6px;
-$background-color-default--button: #40b0f9;
+$background-color-default--button: #0f9cf7;
 .button {
   @include border-radius($border-radius-default--button);
   background-color: $background-color-default--button;
@@ -10,4 +10,8 @@ $background-color-default--button: #40b0f9;
   letter-spacing: $letterSpacing-looser;
   line-height: $lineHeight-base;
   padding: $padding-base;
+
+  &:hover {
+    background-color: #078ee5;
+  }
 }
