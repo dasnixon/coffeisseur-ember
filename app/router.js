@@ -22,7 +22,5 @@ export default Router.map(function() {
   this.resource('users', function() {
     this.route('signup');
   });
-  this.resource('sessions', function() {
-    this.route('login');
-  });
+  this.route('login');
 });
