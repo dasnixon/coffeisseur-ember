@@ -31,15 +31,8 @@
       {{/if}}
     </ul>
   </nav>
-  <nav class='subNav subNav--fixed'>
-    <ul class='subNav-list'>
-      <li class='subNav-list-item'>
-        {{link-to 'Add a Bean' 'beans.new' class='subNav-list-item-link'}}
-      </li>
-    </ul>
-  </nav>
 </header>
 
-<main class='main'>
+{{#page-layout}}
   {{outlet}}
-</main>
+{{/page-layout}}

@@ -1,18 +1,27 @@
-//form
+$box-shadow-base--form: 4px;
+
 .form {
+  background-color: $white;
+  @include box-shadow($box-shadow-base--form $box-shadow-base--form $box-shadow-base--form $gray-lightest);
   display: block;
+  @include outer-container;
+  padding: $padding-larger;
 }
 .form-section {
   margin: 0 0 $margin-larger 0;
   width: 100%;
 
   &:first-child {
-    margin-top: $margin-medium;
+    margin-top: 0;
   }
 }
+.form-section--half {
+  @include span-columns(6);
+}
 .form-section-header {
+  color: $gray-light;
   font-size: $fontSize-medium;
-  font-weight: $fontWeight-demibold;
+  font-weight: $fontWeight-medium;
   line-height: $lineHeight-loosest;
   margin-left: $margin-base;
   text-transform: uppercase;
@@ -23,22 +32,21 @@
   margin-right: $margin-base;
 }
 
-$height-default--input: 24px;
-$width-default--input: 500px;
+$height-default--input: 32px;
 $border-radius-default--input: 2px;
 //input
 .input {
   @include border-radius($border-radius-default--input);
-  @include css3-prefix('box-shadow', 'inset 0 1px 1px #{$gray-lightest}');
+  @include box-shadow(inset 0 1px 1px $gray-lightest);
   background-color: $white;
   border: 1px solid $gray-lightest;
-  display: inline-block;
+  display: block;
   font-size: $fontSize-base;
   height: $height-default--input;
   line-height: $height-default--input;
   padding: $padding-small 0;
   text-indent: $padding-small;
-  width: $width-default--input;
+  width: 100%;
   &:focus {
     border-color: rgba(82,168,236,.8);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
@@ -47,7 +55,7 @@ $border-radius-default--input: 2px;
   }
 }
 .input--checkbox {
-  @include css3-prefix('box-shadow', 'none');
+  @include prefixer(box-shadow, 'none', webkit moz ms o spec);
   height: auto;
   padding: 0;
   margin: 0;
@@ -56,4 +64,16 @@ $border-radius-default--input: 2px;
 .textarea {
   @extend .input;
   height: auto;
+}
+.buttonContainer {
+  @include outer-container;
+  margin: $margin-large 0 0 0;
+}
+.buttonContainer-submit {
+  @include span-columns(4);
+  @include shift(4);
+  font-size: $fontSize-medium;
+  font-weight: $fontWeight-medium;
+  padding: $padding-larger;
+  text-transform: uppercase;
 }

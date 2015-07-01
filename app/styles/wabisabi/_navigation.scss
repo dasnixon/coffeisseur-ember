@@ -1,7 +1,7 @@
 $height-default--nav: 80px;
 $line-height-default--nav: $height-default--nav;
 $background-color-default--nav: #0f9cf7;
-$font-size-default--nav-title: $height-default--nav/2;
+$font-size-default--nav-title: $fontSize-base*2;
 .nav {
   background-color: $background-color-default--nav;
   color: $white;
@@ -31,6 +31,7 @@ $font-size-default--nav-title: $height-default--nav/2;
 }
 .nav-list-item-link {
   color: $white;
+  cursor: pointer;
   display: block;
   padding: 0 $padding-largerer;
   text-decoration: none;

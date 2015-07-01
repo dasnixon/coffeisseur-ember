@@ -1,62 +1,42 @@
 <form class='form'>
-
-  <div class='form-section'>
-    <div class='form-section-header'>
-      First Name
-    </div>
-    {{input value=model.firstName placeholder='First Name' class='input'}}
-  </div>
-
-  <div class='form-section'>
-    <div class='form-section-header'>
-      Last Name
-    </div>
-    {{input value=model.lastName placeholder='Last Name' class='input'}}
-  </div>
-
   <div class='form-section'>
     <div class='form-section-header'>
       Email
     </div>
-    {{input value=model.email placeholder='Email' class='input'}}
+    {{input value=model.email placeholder='coffee@wabisabi.com' class='input'}}
   </div>
 
-  <div class='form-section'>
+  <div class='form-section form-section--half'>
     <div class='form-section-header'>
-      Username
+      First Name
     </div>
-    {{input value=model.username placeholder='Username' class='input'}}
+    {{input value=model.firstName type='input' class='input'}}
   </div>
 
-  <div class='form-section'>
+  <div class='form-section form-section--half'>
     <div class='form-section-header'>
-      About
+      Last Name
     </div>
-    {{textarea rows='3' value=model.about placeholder='About' class='textarea'}}
+    {{input value=model.lastName type='input' class='input'}}
   </div>
 
-  <div class='form-section'>
-    <div class='form-section-header form-section-header--inline'>
-      Roaster?
-    </div>
-    {{input checked=model.roaster type='checkbox' class='input input--checkbox'}}
-  </div>
-
-  <div class='form-section'>
+  <div class='form-section form-section--half'>
     <div class='form-section-header'>
       Password
     </div>
     {{input value=model.password type='password' class='input'}}
   </div>
 
-  <div class='form-section'>
+  <div class='form-section form-section--half'>
     <div class='form-section-header'>
       Password Confirmation
     </div>
     {{input value=model.passwordConfirmation type='password' class='input'}}
   </div>
-
-  <button class='button' {{action 'createUser'}}>
-    Create User
-  </button>
 </form>
+
+<div class='buttonContainer'>
+  <button class='button buttonContainer-submit' {{action 'save'}}>
+    Register
+  </button>
+</div>

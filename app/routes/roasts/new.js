@@ -2,7 +2,7 @@ import Ember from 'ember';
 import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixin';
 
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
-  beforeModel: function(transition) {
+  beforeModel(transition) {
     this._super(transition);
     if (Ember.isNone(this.modelFor('bean'))) {
       this.transitionTo('beans.new');
@@ -11,7 +11,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     }
   },
 
-  model: function() {
+  model() {
     return this.store.createRecord('roast', { bean: this.modelFor('bean') });
   }
 });
