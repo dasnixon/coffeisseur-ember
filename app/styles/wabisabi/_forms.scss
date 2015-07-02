@@ -3,33 +3,48 @@ $box-shadow-base--form: 4px;
 .form {
   background-color: $white;
   @include box-shadow($box-shadow-base--form $box-shadow-base--form $box-shadow-base--form $gray-lightest);
-  display: block;
   @include outer-container;
   padding: $padding-larger;
 }
 .form-section {
-  margin: 0 0 $margin-larger 0;
-  width: 100%;
+  @include row();
+  margin: $margin-base 0;
 
-  &:first-child {
+  &:first-of-type {
     margin-top: 0;
   }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
-.form-section--half {
+.form-section-field {
+  @include span-columns(12);
+}
+.form-section-field--6 {
   @include span-columns(6);
 }
-.form-section-header {
-  color: $gray-light;
+.form-section-field-header {
+  color: $gray;
   font-size: $fontSize-medium;
   font-weight: $fontWeight-medium;
   line-height: $lineHeight-loosest;
   margin-left: $margin-base;
   text-transform: uppercase;
 }
-.form-section-header--inline {
+.form-section-field-header--inline {
   display: inline-block;
   margin-left: 0;
   margin-right: $margin-base;
+}
+.form-section-field-input {
+  display: block;
+  width: 100%;
+}
+.form-section-field-input-errors {
+  color: $red;
+  line-height: $lineHeight-loose;
+  margin-left: $margin-base;
 }
 
 $height-default--input: 32px;

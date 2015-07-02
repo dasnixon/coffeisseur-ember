@@ -1,37 +1,43 @@
 <form class='form'>
   <div class='form-section'>
-    <div class='form-section-header'>
-      Email
+    <div class='form-section-field'>
+      <div class='form-section-field-header'>
+        Email
+      </div>
+      {{validated-input value=model.email placeholder='coffee@wabisabi.com' type='input' errors=model.errors.email}}
     </div>
-    {{input value=model.email placeholder='coffee@wabisabi.com' class='input'}}
   </div>
 
-  <div class='form-section form-section--half'>
-    <div class='form-section-header'>
-      First Name
+  <div class='form-section'>
+    <div class='form-section-field form-section-field--6'>
+      <div class='form-section-field-header'>
+        First Name
+      </div>
+      {{input value=model.firstName placeholder='wabi' type='input' class='input'}}
     </div>
-    {{input value=model.firstName type='input' class='input'}}
+
+    <div class='form-section-field form-section-field--6'>
+      <div class='form-section-field-header'>
+        Last Name
+      </div>
+      {{input value=model.lastName placeholder='sabi' type='input' class='input'}}
+    </div>
   </div>
 
-  <div class='form-section form-section--half'>
-    <div class='form-section-header'>
-      Last Name
+  <div class='form-section'>
+    <div class='form-section-field form-section-field--6'>
+      <div class='form-section-field-header'>
+        Password
+      </div>
+      {{input value=model.password type='password' class='input'}}
     </div>
-    {{input value=model.lastName type='input' class='input'}}
-  </div>
 
-  <div class='form-section form-section--half'>
-    <div class='form-section-header'>
-      Password
+    <div class='form-section-field form-section-field--6'>
+      <div class='form-section-field-header'>
+        Password Confirmation
+      </div>
+      {{input value=model.passwordConfirmation type='password' class='input'}}
     </div>
-    {{input value=model.password type='password' class='input'}}
-  </div>
-
-  <div class='form-section form-section--half'>
-    <div class='form-section-header'>
-      Password Confirmation
-    </div>
-    {{input value=model.passwordConfirmation type='password' class='input'}}
   </div>
 </form>
 
