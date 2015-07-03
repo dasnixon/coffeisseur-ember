@@ -1,5 +1,5 @@
 $border-radius-default--button: 6px;
-$background-color-default--button: #0f9cf7;
+$background-color-default--button: $primary;
 .button {
   @include box-shadow(2px 2px 2px $gray-lightest);
   background-color: $background-color-default--button;

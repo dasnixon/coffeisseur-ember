@@ -1,5 +1,16 @@
 $box-shadow-base--form: 4px;
 
+.formTitle {
+  color: #8C8C8C;
+  font-size: $fontSize-large;
+  font-weight: $fontWeight-demibold;
+  letter-spacing: $letterSpacing-looser;
+  line-height: $lineHeight-loosestest;
+  margin-top: $margin-base;
+  padding: 0 $padding-largest;
+  text-transform: uppercase;
+}
+
 .form {
   background-color: $white;
   @include box-shadow($box-shadow-base--form $box-shadow-base--form $box-shadow-base--form $gray-lightest);
@@ -25,17 +36,18 @@ $box-shadow-base--form: 4px;
   @include span-columns(6);
 }
 .form-section-field-header {
-  color: $gray;
-  font-size: $fontSize-medium;
-  font-weight: $fontWeight-medium;
-  line-height: $lineHeight-loosest;
-  margin-left: $margin-base;
+  color: #8C8C8C;
+  font-size: $fontSize-small;
+  font-weight: $fontWeight-demibold;
+  letter-spacing: $letterSpacing-looser;
+  line-height: $lineHeight-base;
+  padding-left: $margin-base;
   text-transform: uppercase;
 }
 .form-section-field-header--inline {
   display: inline-block;
-  margin-left: 0;
   margin-right: $margin-base;
+  padding-left: 0;
 }
 .form-section-field-input {
   display: block;
@@ -43,7 +55,9 @@ $box-shadow-base--form: 4px;
 }
 .form-section-field-input-errors {
   color: $red;
-  line-height: $lineHeight-loose;
+  font-size: $fontSize-small;
+  letter-spacing: $letterSpacing-loose;
+  line-height: $lineHeight-base;
   margin-left: $margin-base;
 }
 
@@ -87,7 +101,6 @@ $border-radius-default--input: 2px;
 .buttonContainer-submit {
   @include span-columns(4);
   @include shift(4);
-  font-size: $fontSize-medium;
   font-weight: $fontWeight-medium;
   padding: $padding-larger;
   text-transform: uppercase;

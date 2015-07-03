@@ -1,3 +1,7 @@
+<div class='formTitle'>
+  Create an account
+</div>
+
 <form class='form'>
   <div class='form-section'>
     <div class='form-section-field'>
@@ -13,14 +17,14 @@
       <div class='form-section-field-header'>
         First Name
       </div>
-      {{input value=model.firstName placeholder='wabi' type='input' class='input'}}
+      {{validated-input value=model.firstName placeholder='Chris' type='input' errors=model.errors.firstName}}
     </div>
 
     <div class='form-section-field form-section-field--6'>
       <div class='form-section-field-header'>
         Last Name
       </div>
-      {{input value=model.lastName placeholder='sabi' type='input' class='input'}}
+      {{validated-input value=model.lastName placeholder='Nixon' type='input' errors=model.errors.lastName}}
     </div>
   </div>
 
@@ -29,14 +33,14 @@
       <div class='form-section-field-header'>
         Password
       </div>
-      {{input value=model.password type='password' class='input'}}
+      {{validated-input value=model.password type='password' errors=model.errors.password}}
     </div>
 
     <div class='form-section-field form-section-field--6'>
       <div class='form-section-field-header'>
         Password Confirmation
       </div>
-      {{input value=model.passwordConfirmation type='password' class='input'}}
+      {{validated-input value=model.passwordConfirmation type='password' errors=model.errors.passwordConfirmation}}
     </div>
   </div>
 </form>

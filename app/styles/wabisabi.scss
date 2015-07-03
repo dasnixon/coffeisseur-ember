@@ -4,6 +4,7 @@ body {
   color: $black;
   font-size: $fontSize-base;
   line-height: $lineHeight-base;
+  margin: 0;
 }
 .main {
   @include outer-container;

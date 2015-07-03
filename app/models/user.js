@@ -29,12 +29,6 @@ export default DS.Model.extend(EmberValidations.Mixin, {
       presence: {
         message: 'password required'
       }
-    },
-    passwordConfirmation: {
-      presence: {
-        message: 'please confirm your password'
-      }
     }
   }
-
 });

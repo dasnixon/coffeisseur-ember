@@ -14,6 +14,8 @@ export default Ember.Controller.extend({
             identification: response.session.email,
             password: response.session.password
           });
+        }, (/*response */) => {
+          this.set('isSaving', false);
         });
       }).catch(() => {
         this.set('isSaving', false);

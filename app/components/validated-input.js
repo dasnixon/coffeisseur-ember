@@ -12,7 +12,6 @@ export default Ember.Component.extend({
   hasErrors: Ember.computed.notEmpty('errors'),
 
   showErrors: Ember.computed('hideErrors', 'hasErrors', function() {
-    console.log(this.get('hasErrors'));
     return !this.get('hideErrors') && this.get('hasErrors');
   }),
 
@@ -21,12 +20,10 @@ export default Ember.Component.extend({
   }),
 
   focusIn() {
-    console.log('focusIn');
     this.set('hideErrors', true);
   },
 
   focusOut() {
-    console.log('focusOut');
     this.set('hideErrors', false);
   }
 });
