@@ -1,9 +1,14 @@
+// Plugins
 @import 'bourbon/bourbon';
+@import 'grid-settings';
 @import 'neat/neat';
 
+// Mixins
 @import 'wabisabi/mixins/_border_radius';
 @import 'wabisabi/mixins/_box_shadow';
+@import 'wabisabi/mixins/_forms';
 
+// Variables
 @import 'wabisabi/variables/_colors';
 @import 'wabisabi/variables/_margin';
 @import 'wabisabi/variables/_padding';
@@ -11,10 +16,13 @@
 @import 'wabisabi/variables/_zindex';
 @import 'wabisabi/variables/_custom';
 
-@import 'wabisabi/_buttons';
-@import 'wabisabi/_forms';
-@import 'wabisabi/_navigation';
-@import 'wabisabi/_sub_navigation';
+// Components
+@import 'wabisabi/components/_buttons';
+@import 'wabisabi/components/_forms';
+@import 'wabisabi/components/_navigation';
+@import 'wabisabi/components/_sub_navigation';
+
+// Page-specific
 @import 'wabisabi';
 @import 'roasts';
 @import 'beans';

@@ -3,6 +3,7 @@ $height-default--nav: 80px;
 $line-height-default--nav: $height-default--nav;
 $background-color-default--nav: $primary;
 $font-size-default--nav-title: $fontSize-base*2;
+$opacity-low--nav: 0.2;
 
 // Sub-navigation
 $height-default--subNav: $height-default--nav/2;
@@ -15,7 +16,8 @@ $box-shadow-base--form: 4px;
 $line-height-base--formTitle: 32px;
 $color-base--formTitle: #8C8C8C;
 $color-base--form-section-field-header: $color-base--formTitle;
-$background-color-default--input: #fcfcfc;
+$background-color-default--input: lighten(gray, 48%);
+$color-default--placeholder: lighten(gray, 25%);
 
 // Body
 $background-color-default--body: #f5f3ee;
@@ -23,4 +25,3 @@ $background-color-default--body: #f5f3ee;
 // Buttons
 $border-radius-default--button: 6px;
 $background-color-default--button: $primary;
-

@@ -8,7 +8,6 @@
   padding: 0 $padding-largest;
   text-transform: uppercase;
 }
-
 .form {
   background-color: $white;
   @include box-shadow($box-shadow-base--form $box-shadow-base--form $box-shadow-base--form $gray-lightest);
@@ -102,4 +101,8 @@ $border-radius-default--input: 2px;
   font-weight: $fontWeight-medium;
   padding: $padding-larger;
   text-transform: uppercase;
+}
+@include placeholder {
+  color: $color-default--placeholder;
+  font-weight: $fontWeight-lighter;
 }

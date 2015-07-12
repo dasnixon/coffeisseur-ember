@@ -1,5 +1,5 @@
 .nav {
-  background-color: $background-color-default--nav;
+  background-color: transparentize($background-color-default--nav, $opacity-low--nav);
   color: $white;
   height: $height-default--nav;
   line-height: $line-height-default--nav;
@@ -43,4 +43,16 @@
   font-size: $font-size-default--nav-title;
   margin-left: $margin-largest;
   text-transform: uppercase;
+}
+.nav-logo {
+  color: $white;
+  display: inline-block;
+  float: left;
+  font-size: $fontSize-xxxlarge;
+  font-weight: $fontWeight-bold;
+  margin: 0 $margin-largerer;
+}
+.nav-logo a {
+  color: $white;
+  text-decoration: none;
 }
