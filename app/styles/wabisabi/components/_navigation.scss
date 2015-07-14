@@ -12,20 +12,23 @@
   top: 0;
   z-index: $zIndex-10;
 }
-.nav-list {
+.nav-container {
+  @include outer-container;
+}
+.nav-container-list {
   float: left;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.nav-list--right {
+.nav-container-list--right {
   float: right;
 }
-.nav-list-item {
+.nav-container-list-item {
   float: left;
   list-style-type: none;
 }
-.nav-list-item-link {
+.nav-container-list-item-link {
   color: $white;
   cursor: pointer;
   display: block;
@@ -39,20 +42,20 @@
     color: $white;
   }
 }
-.nav-title {
+.nav-container-title {
   font-size: $font-size-default--nav-title;
   margin-left: $margin-largest;
   text-transform: uppercase;
 }
-.nav-logo {
+.nav-container-logo {
   color: $white;
   display: inline-block;
   float: left;
   font-size: $fontSize-xxxlarge;
   font-weight: $fontWeight-bold;
-  margin: 0 $margin-largerer;
+  margin-right: $margin-largerer;
 }
-.nav-logo a {
+.nav-container-logo a {
   color: $white;
   text-decoration: none;
 }

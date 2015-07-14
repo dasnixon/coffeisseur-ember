@@ -1,9 +1,13 @@
-<nav class='subNav subNav--fixed'>
-  <ul class='subNav-list'>
-    <li class='subNav-list-item'>
-      {{link-to 'Add a Bean' 'beans.new' class='subNav-list-item-link'}}
-    </li>
-  </ul>
-</nav>
+{{#if session.isAuthenticated}}
+  <nav class='subNav subNav--fixed'>
+    <div class='subNav-container'>
+      <ul class='subNav-container-list'>
+        <li class='subNav-container-list-item'>
+          {{link-to 'Add a Bean' 'beans.new' class='subNav-container-list-item-link'}}
+        </li>
+      </ul>
+    </div>
+  </nav>
+{{/if}}
 
 {{outlet}}

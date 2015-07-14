@@ -1,39 +1,41 @@
 <header>
   <nav class='nav nav--fixed'>
-    <div class='nav-logo'>
-      {{link-to 'W' 'application'}}
+    <div class='nav-container'>
+      <div class='nav-container-logo'>
+        {{link-to 'W' 'application'}}
+      </div>
+
+      <ul class='nav-container-list'>
+        <li class='nav-container-list-item'>
+          {{link-to 'Roasts' 'roasts' class='nav-container-list-item-link'}}
+        </li>
+        <li class='nav-container-list-item'>
+          {{link-to 'Beans' 'beans' class='nav-container-list-item-link'}}
+        </li>
+        <li class='nav-container-list-item'>
+          {{link-to 'About' 'about' class='nav-container-list-item-link'}}
+        </li>
+      </ul>
+
+      <span class='nav-container-title'>
+        {{title}}
+      </span>
+
+      <ul class='nav-container-list nav-container-list--right'>
+        {{#if session.isAuthenticated}}
+          <li class='nav-container-list-item'>
+            <a class='nav-container-list-item-link' {{action 'invalidateSession'}}>Logout</a>
+          </li>
+        {{else}}
+          <li class='nav-container-list-item'>
+            {{link-to 'Register' 'users.signup' class='nav-container-list-item-link'}}
+          </li>
+          <li class='nav-container-list-item'>
+            {{link-to 'Login' 'login' class='nav-container-list-item-link'}}
+          </li>
+        {{/if}}
+      </ul>
     </div>
-
-    <ul class='nav-list'>
-      <li class='nav-list-item'>
-        {{link-to 'Roasts' 'roasts' class='nav-list-item-link'}}
-      </li>
-      <li class='nav-list-item'>
-        {{link-to 'Beans' 'beans' class='nav-list-item-link'}}
-      </li>
-      <li class='nav-list-item'>
-        {{link-to 'About' 'about' class='nav-list-item-link'}}
-      </li>
-    </ul>
-
-    <span class='nav-title'>
-      {{title}}
-    </span>
-
-    <ul class='nav-list nav-list--right'>
-      {{#if session.isAuthenticated}}
-        <li class='nav-list-item'>
-          <a class='nav-list-item-link' {{action 'invalidateSession'}}>Logout</a>
-        </li>
-      {{else}}
-        <li class='nav-list-item'>
-          {{link-to 'Register' 'users.signup' class='nav-list-item-link'}}
-        </li>
-        <li class='nav-list-item'>
-          {{link-to 'Login' 'login' class='nav-list-item-link'}}
-        </li>
-      {{/if}}
-    </ul>
   </nav>
 </header>
 

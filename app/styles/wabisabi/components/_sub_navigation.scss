@@ -10,17 +10,20 @@
   max-height: $height-default--subNav;
   top: $height-default--nav;
 }
-.subNav-list {
-  @extend .nav-list;
+.subNav-container {
+  @include outer-container;
 }
-.subNav-list--right {
-  @extend .nav-list--right;
+.subNav-container-list {
+  @extend .nav-container-list;
 }
-.subNav-list-item {
-  @extend .nav-list-item;
+.subNav-container-list--right {
+  @extend .nav-container-list--right;
 }
-.subNav-list-item-link {
-  @extend .nav-list-item-link;
+.subNav-container-list-item {
+  @extend .nav-container-list-item;
+}
+.subNav-container-list-item-link {
+  @extend .nav-container-list-item-link;
   color: $color-default--subNav;
 
   &.active,
