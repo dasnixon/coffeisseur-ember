@@ -1,0 +1,5 @@
+{{#each cups as |cup|}}
+  <span {{action 'set' cup.rating}} class="coffeeRating-cup {{if cup.full 'icon-star' 'icon-star-empty'}}">
+    Cup
+  </span>
+{{/each}}

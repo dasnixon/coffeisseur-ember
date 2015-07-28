@@ -1,0 +1,45 @@
+<div class='formTitle'>
+  Add a Cup
+</div>
+
+<form class='form'>
+  <div class='form-section'>
+    <div class='form-section-field form-section-field--6'>
+      <div class='form-section-field-header'>
+        Name
+      </div>
+      {{validated-input value=model.name placeholder='Tesora' type='input' errors=model.errors.name}}
+    </div>
+
+    <div class='form-section-field form-section-field--6'>
+      <div class='form-section-field-header'>
+        Brew Process
+      </div>
+      {{validated-input value=model.brewProcess placeholder='V60 Pour Over' type='input'}}
+    </div>
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-field form-section-field--6'>
+      <div class='form-section-field-header'>
+        Rating
+      </div>
+      {{coffee-rating rating=model.rating}}
+    </div>
+  </div>
+
+  <div class='form-section'>
+    <div class='form-section-field'>
+      <div class='form-section-field-header'>
+        Description
+      </div>
+      {{textarea value=model.description placeholder='Description' class='textarea'}}
+    </div>
+  </div>
+</form>
+
+<div class='buttonContainer'>
+  <button class='button buttonContainer-submit' {{action 'save'}}>
+    Save
+  </button>
+</div>

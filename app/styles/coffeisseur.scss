@@ -1,9 +1,9 @@
-body {
+.body {
   background-color: $background-color-default--body;
   color: $black;
   font-size: $fontSize-base;
   line-height: $lineHeight-base;
-  margin: 0;
+  margin: 0 $margin-base;
 }
 .main {
   @include outer-container;

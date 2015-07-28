@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import Notification from 'wabi-sabi-ember/models/notification';
+import Notification from 'coffeisseur-ember/models/notification';
 
 var {
   computed,

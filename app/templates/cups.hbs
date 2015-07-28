@@ -1,13 +1,13 @@
-{{#if session.isAuthenticated}}
+<section>
   <nav class='subNav subNav--fixed'>
     <div class='subNav-container'>
       <ul class='subNav-container-list'>
         <li class='subNav-container-list-item'>
-          {{link-to 'Add a Bean' 'beans.new' class='subNav-container-list-item-link'}}
+          {{link-to 'Add a Cup' 'cups.new' class='subNav-container-list-item-link'}}
         </li>
       </ul>
     </div>
   </nav>
-{{/if}}
+</section>
 
 {{outlet}}

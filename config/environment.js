@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'wabi-sabi-ember',
+    modulePrefix: 'coffeisseur-ember',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

@@ -1,10 +1,10 @@
 @import 'neat/neat-helpers';
 
-$max-width: em(1150);
+$max-width: em(1200);
 $mobile-width: em(480);
 $small-tablet-width: em(720);
 $large-tablet-width: em(960);
-$desktop-width: em(1150);
+$desktop-width: em(1200);
 
 // Bourbon Neat Breakpoints
 $mobile: new-breakpoint(max-width $mobile-width, 4);

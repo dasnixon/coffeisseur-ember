@@ -4,25 +4,23 @@
 @import 'neat/neat';
 
 // Mixins
-@import 'wabisabi/mixins/_border_radius';
-@import 'wabisabi/mixins/_box_shadow';
-@import 'wabisabi/mixins/_forms';
+@import 'coffeisseur/mixins/_border_radius';
+@import 'coffeisseur/mixins/_box_shadow';
+@import 'coffeisseur/mixins/_forms';
 
 // Variables
-@import 'wabisabi/variables/_colors';
-@import 'wabisabi/variables/_margin';
-@import 'wabisabi/variables/_padding';
-@import 'wabisabi/variables/_type';
-@import 'wabisabi/variables/_zindex';
-@import 'wabisabi/variables/_custom';
+@import 'coffeisseur/variables/_colors';
+@import 'coffeisseur/variables/_margin';
+@import 'coffeisseur/variables/_padding';
+@import 'coffeisseur/variables/_type';
+@import 'coffeisseur/variables/_zindex';
+@import 'coffeisseur/variables/_custom';
 
 // Components
-@import 'wabisabi/components/_buttons';
-@import 'wabisabi/components/_forms';
-@import 'wabisabi/components/_navigation';
-@import 'wabisabi/components/_sub_navigation';
+@import 'coffeisseur/components/_buttons';
+@import 'coffeisseur/components/_forms';
+@import 'coffeisseur/components/_navigation';
+@import 'coffeisseur/components/_sub_navigation';
 
 // Page-specific
-@import 'wabisabi';
-@import 'roasts';
-@import 'beans';
+@import 'coffeisseur';

@@ -1,7 +1,7 @@
 {
-  "name": "wabi-sabi-ember",
+  "name": "coffeisseur-ember",
   "version": "0.0.0",
-  "description": "Small description for wabi-sabi-ember goes here",
+  "description": "Small description for coffeisseur-ember goes here",
   "private": true,
   "directories": {
     "doc": "doc",
